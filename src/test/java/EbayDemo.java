@@ -5,11 +5,14 @@ import org.openqa.selenium.support.ui.Select;
 
 public class EbayDemo {
     public static void main(String[] args) throws InterruptedException {
+        //WebDriver driver = WebDriverManager.chromedriver().create();
         WebDriver driver = WebDriverManager.chromedriver().create();
 //        Thread.sleep(2000);
         driver.manage().window().maximize();
 //        Thread.sleep(2000);
         driver.get("https://www.ebay.com/");
+        String currentUrl = driver.getCurrentUrl();
+        System.out.println(currentUrl);
 //        Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@id='gh-ac']")).click();
         driver.findElement(By.xpath("//input[@id='gh-ac']")).clear();
