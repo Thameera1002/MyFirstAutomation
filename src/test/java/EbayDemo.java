@@ -9,10 +9,15 @@ public class EbayDemo {
         WebDriver driver = WebDriverManager.chromedriver().create();
 //        Thread.sleep(2000);
         driver.manage().window().maximize();
+        String url = "https://www.ebay.com/";
 //        Thread.sleep(2000);
-        driver.get("https://www.ebay.com/");
+        driver.get(url);
         String currentUrl = driver.getCurrentUrl();
-        System.out.println(currentUrl);
+        String currentTitle = driver.getTitle();
+        if (currentUrl.contains(url) && currentTitle.contains("eBay") ) {
+            System.out.println(currentUrl +" : "+currentTitle);
+        }
+
 //        Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@id='gh-ac']")).click();
         driver.findElement(By.xpath("//input[@id='gh-ac']")).clear();
