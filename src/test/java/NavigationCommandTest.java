@@ -29,7 +29,7 @@ public class NavigationCommandTest {
 
         driver.navigate().refresh();
         Thread.sleep(2000);
-        
+
         driver.quit();
     }
 }
