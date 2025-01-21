@@ -12,7 +12,7 @@ public class MouseActionTest {
         testMouseHover();
         testContextClickAction();
         testSliderAction();
-        
+
     }
 
     public static void testDoubleClickAction() {
