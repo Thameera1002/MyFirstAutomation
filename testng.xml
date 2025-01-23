@@ -2,19 +2,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true"
-          name="/Users/thameeramalinga/DeveloperStackQA/Day-05/MyFirstAutomation/src/test/java/testng">
+          name="/Users/thameeramalinga/DeveloperStackQA/Day-07/MyFirstAutomation/src/test/java/testng">
+        <groups>
+            <run>
+                <exclude name="smoke"/>
+                <include name="regression"/>
+            </run>
+        </groups>
         <classes>
-            <class name="testng.FirstTestNGAutomation">
-                <methods>
-                    <include name="googleSearch"/>
-                </methods>
-            </class>
-            <class name="testng.TestNGAnnotationTest">
-                <methods>
-                    <include name="test1"/>
-                    <exclude name="test2"/>
-                </methods>
-            </class>
+            <class name="testng.TestNGGroupTest"/>
         </classes>
     </test>
 </suite>
