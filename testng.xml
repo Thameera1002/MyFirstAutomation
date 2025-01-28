@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test parallel="methods" thread-count="5" verbose="2" preserve-order="true"
-          name="/Users/thameeramalinga/DeveloperStackQA/Day-07/MyFirstAutomation/src/test/java/testng">
+    <test verbose="2" preserve-order="true" parallel="classes" thread-count="5"
+          name="/Users/thameeramalinga/DeveloperStackQA/Day-07/MyFirstAutomation/src/test/java/paralleEx">
         <classes>
-            <class name="testng.TestNGParellelTest">
-                <methods>
-                    <include name="method1"/>
-                    <include name="method2"/>
-                    <include name="method3"/>
-                    <include name="method4"/>
-                    <include name="method5"/>
-                </methods>
-            </class>
+            <class name="paralleEx.TestClass1"/>
+            <class name="paralleEx.TestClass2"/>
+
         </classes>
     </test>
 </suite>

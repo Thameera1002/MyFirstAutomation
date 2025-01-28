@@ -16,7 +16,6 @@ import java.util.stream.IntStream;
 
 public class ExcelReadWrite {
     private static List<Object[]> studentDetail = (List<Object[]>) Arrays.asList(
-            new Object[]{"Name", "Age"},
             new Object[]{"Amal", 25},
             new Object[]{"Sunil", 30},
             new Object[]{"Pasan", 28}
@@ -70,7 +69,7 @@ public class ExcelReadWrite {
     }
 
     public static void main(String[] args) throws IOException {
-        //ExcelReadWrite.writeToExcel();
+        ExcelReadWrite.writeToExcel();
 
         ExcelReadWrite.readFromExcel();
     }
