@@ -3,7 +3,7 @@ package paralleEx;
 import org.testng.annotations.Test;
 
 public class TestClass1 {
-    @Test(groups = "smoke")
+    @Test(groups = "smoke",enabled = false)
     public void test1() {
         System.out.println("TC 01 test1 : execute in "+Thread.currentThread().getId());
     }
